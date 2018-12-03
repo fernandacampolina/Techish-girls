@@ -1,53 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-  <title>Tech</ish> Girls</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Techish Girls</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="women in tech" />
+  <meta name="keywords" content="blog, women in tech, testimonials" />
+  <meta name="author" content="Fernanda and Sabrina" />
 
-  <meta name"viewport" content="width=device-width, initial-scaled=1.0">
+
+
   <script
-    src="http://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://www.garethweaver.com/codepen/css/screen.css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/iih2fdb.css">
+
+
+  <link rel="stylesheet" href="https://use.typekit.net/iih2fdb.css">
+
+
+
+
 </head>
 
 <body>
-<header>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
 
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.techishgirls.com">
+        <img src="images/logo.png" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Blog
+        </a>
+
+        <a class="navbar-item" href="html/about.html">
+          About Us
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Community
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Mission
+            </a>
+            <a class="navbar-item">
+              Join the team
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a>
           </div>
-          <a class="navbar-brand" href="#">Tech</ish> Girls Logo goes here</a>
+        </div>
+      </div>
 
-          <div class="social-menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://www.twitter.com/Techishgirls" rel="external" class="twitter">Twitter</a>/li>
-              <li><a href="https://www.facebook.com/Techishgirls" rel="external" class="facebook">Facebook</a></li>
-              <li><a href="https://www.instagram.com/techishgirls" rel="external" class="facebook">Instagram</a></li>
-              <li><a href="#search">Search</a></li>
-            </ul>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+
+
+                      <a href="http://www.twitter.com/techishgirls"> <img class="social-media-ico" src="images/social/twitter-icon.png" /></a>
+                      <a href="http://www.facebook.com">  <img class ="social-media-ico" src="images/social/fb-icon.png" /></a>
+                      <a href="http://www.instagram.com">  <img class= "social-media-ico" src="images/social/instagram-icon.png" /></a>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!--slider -->
 
 
 
-            <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#buzz">Testimonials</a></li>
-                <li><a href="#mission">About</a></li>
-              </ul>
+
+
+  <div style="overflow:hidden; padding:70px 0 30px;">
+  <div class="row">
+    <div class="col lrg-12">
+
+        <div class="slider-wrap">
+          <div class="slider">
+            <div class="outer">
+              <div class="tray">
+                <section id="all-articles" style="left:-100%;"><img src="images/features/01.jpg"></section>
+                <section id="featured-articles" style="left:0%;" class="current"><img src="images/features/02.jpg"></section>
+                <section id="popular-articles" style="left:100%;"><img src="images/features/03.jpg"></section>
+                <section id="new-articles" style="left:200%;"><img src="images/features/04.jpg"></section>
+              </div>
             </div>
-</header>
-    </nav>
+            <div class="mask left">
+              <a href="#" class="arrow left"><span>All</span></a>
+            </div>
+            <div class="mask right">
+              <a href="#" class="arrow right"><span>Popular</span></a>
+            </div>
+          </div>
+          <nav class="slider-nav">
+            <ul>
+              <li class="current"><a href="#featured-articles">Featured</a></li>
+              <li><a href="#popular-articles">Popular</a></li>
+              <li><a href="#new-articles">New</a></li>
+              <li><a href="#all-articles">All</a></li>
+            </ul>
+            <span class="highlight"></span>
+          </nav>
+        </div>
 
-<h1> HI </h1>
+      </div>
+  </div>
+</div>
+
+<!-- grid -->
+<br>
+<hr class="style14">
+
+
+<section class="section-features" id="features">
+  <div class="row">
+    <h2>Recent Posts</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <div class="entry-thumbnail">
+
+    <a href="http://http://techishgirls.com" title="“Tech around us &amp; eventS" rel="bookmark"><img width="316" height="474" src="images/features/06.jpg" class="attachment-post-thumbnail-vertical size-post-thumbnail-vertical" alt="" scale="0"></a>
+      </div>
+      <i class="fas fa-tree icon-p"></i>
+      <div class="entry-info">
+
+    <div class="entry-meta" id=thumbbb>
+    <div class="categories"><a href="http://www.techishgirls.com/everydaytech">EVENTS</a></div>
+    <time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">NOVEMBER 10, 2018</time>
+    </div>
+    </div>
+      <h3>The Unicorn's era</h3>
+        <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+        <div class="read-more">
+        <a href="http://google.com">READ MORE</a>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="entry-thumbnail">
+    <a href="http://http://techishgirls.com" title="“Tech around us &amp; Beauty Industry" rel="bookmark"><img width="474" height="316" src="images/features/05.jpg" class="attachment-post-thumbnail-horizontal size-post-thumbnail-horizontal" alt="" scale="0"></a>
+      </div>
+      <i class="fas fa-tree icon-p"></i>
+      <div class="entry-info">
+
+	<div class="entry-meta" id=thumbbb>
+		<div class="categories"><a href="http://www.techishgirls.com/everydaytech">EVERYDAY TECH</a></div>
+		<time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">NOVEMBER 2, 2018</time>
+	</div>
+</div>
+      <h3>Always Charged</h3>
+        <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+        <div class="read-more">
+        <a href="http://google.com">READ MORE</a>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="entry-thumbnail">
+
+    <a href="http://http://techishgirls.com" title="“Tech around us &amp; eventS" rel="bookmark"><img width="316" height="474" src="images/features/06.jpg" class="attachment-post-thumbnail-vertical size-post-thumbnail-vertical" alt="" scale="0"></a>
+      </div>
+      <i class="fas fa-tree icon-p"></i>
+      <div class="entry-info">
+
+	<div class="entry-meta" id=thumbbb>
+		<div class="categories"><a href="http://www.techishgirls.com/everydaytech">OPINION</a></div>
+		<time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">OCTOBER 15, 2018</time>
+	</div>
+</div>
+      <h3>Health and tech</h3>
+        <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+
+        <div class="read-more">
+        <a href="http://google.com">READ MORE</a></div>
+    </div>
+ </div>
+
+ <div class="row">
+
+
+   <div class="col-md-4 col-sm-4">
+     <div class="entry-thumbnail">
+
+   <a href="http://http://techishgirls.com" title="“Tech around us &amp; eventS" rel="bookmark"><img width="316" height="474" src="images/features/07.jpg" class="attachment-post-thumbnail-vertical size-post-thumbnail-vertical" alt="" scale="0"></a>
+     </div>
+     <i class="fas fa-tree icon-p"></i>
+     <div class="entry-info">
+
+   <div class="entry-meta" id=thumbbb>
+   <div class="categories"><a href="http://www.techishgirls.com/everydaytech">ART</a></div>
+   <time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">NOVEMBER 10, 2018</time>
+   </div>
+   </div>
+     <h3>Art instalations</h3>
+       <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+       <div class="read-more">
+       <a href="http://google.com">READ MORE</a>
+       </div>
+   </div>
+
+   <div class="col-md-4 col-sm-4">
+
+     <div class="entry-thumbnail">
+   <a href="http://http://techishgirls.com" title="“Tech around us &amp; Beauty Industry" rel="bookmark"><img width="474" height="316" src="images/features/08.jpg" class="attachment-post-thumbnail-horizontal size-post-thumbnail-horizontal" alt="" scale="0"></a>
+     </div>
+     <i class="fas fa-tree icon-p"></i>
+     <div class="entry-info">
+
+   <div class="entry-meta" id=thumbbb>
+   <div class="categories"><a href="http://www.techishgirls.com/everydaytech">GAMES</a></div>
+   <time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">NOVEMBER 2, 2018</time>
+   </div>
+
+   </div>
+     <h3>GAMING</h3>
+       <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+       <div class="read-more">
+       <a href="http://google.com">READ MORE</a>
+       </div>
+   </div>
+   <div class="col-md-4 col-sm-4">
+     <div class="entry-thumbnail">
+   <a href="http://http://techishgirls.com" title="“Tech around us &amp; Beauty Industry" rel="bookmark"><img width="474" height="316" src="images/features/09.jpg" class="attachment-post-thumbnail-horizontal size-post-thumbnail-horizontal" alt="" scale="0"></a>
+     </div>
+     <i class="fas fa-tree icon-p"></i>
+     <div class="entry-info">
+
+ <div class="entry-meta" id=thumbbb>
+   <div class="categories"><a href="http://www.techishgirls.com/everydaytech">TRANSPORT</a></div>
+   <time class="entry-date" pubdate="2018-11-02T17:05:05+00:00" datetime="2018-11-02T17:05:05+00:00">SEPTEMBER 2, 2018</time>
+ </div>
+ </div>
+     <h3>The way we move</h3>
+       <p>Ridiculus mattis iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus. idiculus mattis. Elementum iaculis. Nisi dis ornare taciti rhoncus ultricies vivamus risus</p>
+   </div>
+   <div class="read-more">
+   <a href="http://google.com">READ MORE</a></div>
+</div>
+</div>
+</section>
+
+
+<!-- MORE -->
+
+<div class="more">
+<a href="http://google.com">more</a></div>
+
+<!-- Twitter feed -->
+<hr class="style14">
+<br>
+
+<script
+src="http://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script  src="js/index.js"></script>
+
+
+
 
 </body>
+
 </html>
